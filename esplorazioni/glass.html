@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f2">
+  <title>Filippo — Movimento, ascolto, autonomia</title>
+  <link rel="stylesheet" href="glass.css">
+  <script src="glass.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="float-nav" aria-label="Navigazione del sito">
+    <div class="bar glass">
+      <a class="logo" href="#inizio" aria-label="Filippo fisioterapista, torna all’inizio">filippo<span>.</span></a>
+      <nav class="links" id="menu" aria-label="Navigazione principale">
+        <a href="#servizi">Servizi</a><a href="#approccio">Approccio</a><a href="#prima-visita">Prima visita</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Apri il menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+    <a class="cta glass" href="parliamone.html">Parliamone</a>
+  </header>
+  <main id="contenuto">
+    <section class="hero" id="inizio" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/hero-movimento.png" alt="Una persona su un sentiero di montagna, rivolta verso il paesaggio" fetchpriority="high">
+      <div class="hero-copy"><h1 id="hero-title">Riparti da ciò<br>che conta per te<span class="accent">.</span></h1><p class="hero-description">Ascolto, movimento e un percorso costruito insieme. A partire da te.</p></div>
+      <div class="hero-bottom"><a class="scroll-link" href="#servizi">Trova il tuo punto di partenza</a></div>
+    </section>
+    <section class="services" id="servizi" aria-labelledby="services-title">
+      <div class="gallery-heading"><h2 id="services-title">Il tuo prossimo<br>movimento<span class="accent">.</span></h2><div class="gallery-intro"><p>Dal ritorno allo sport alle attività di ogni giorno. Il percorso comincia da ciò che vuoi ritrovare.</p><div class="gallery-controls"><button id="gallery-prev" aria-label="Servizio precedente">←</button><button id="gallery-next" aria-label="Servizio successivo">→</button></div></div></div>
+      <div class="gallery-track" id="gallery-track" tabindex="0" role="region" aria-label="Gallery dei servizi, scorri orizzontalmente per esplorare">
+        <article class="service-card sport"><div class="service-photo photo-sport" role="img" aria-label="Gambe di un atleta durante la corsa"></div><span class="poster-number" aria-hidden="true">01</span><div class="card-copy"><h3>Riabilitazione<br>sportiva.</h3><p>Ritrovare il tuo gesto.<br>Riprendere il tuo sport.</p></div><button class="card-open" data-service="sport" aria-label="Scopri la riabilitazione sportiva"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+        <article class="service-card movement"><div class="service-photo photo-movement" role="img" aria-label="Una persona durante un esercizio di mobilità"></div><span class="poster-number" aria-hidden="true">02</span><div class="card-copy"><h3>Dolore<br>e movimento.</h3><p>Capire la tua esperienza.<br>Ritrovare le tue attività.</p></div><button class="card-open" data-service="movement" aria-label="Scopri dolore e movimento"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+        <article class="service-card recovery"><div class="service-photo photo-recovery" role="img" aria-label="Un esercizio guidato per il ginocchio"></div><span class="poster-number" aria-hidden="true">03</span><div class="card-copy"><h3>Dopo<br>un intervento.</h3><p>Condividere gli obiettivi.<br>Accompagnare il recupero.</p></div><button class="card-open" data-service="recovery" aria-label="Scopri il recupero dopo un intervento"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+        <article class="service-card assessment"><div class="service-photo photo-assessment" role="img" aria-label="Un atleta durante una valutazione del movimento"></div><span class="poster-number" aria-hidden="true">04</span><div class="card-copy"><h3>Valutazioni<br>funzionali.</h3><p>Misurare per comprendere.<br>Dare forma ai progressi.</p></div><button class="card-open" data-service="assessment" aria-label="Scopri le valutazioni funzionali"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+        <article class="service-card"><div class="service-photo photo-movement photo-mobility" role="img" aria-label="Esercizio di mobilità, immagine di concept"></div><span class="poster-number" aria-hidden="true">05</span><div class="card-copy"><h3>Mobilità<br>quotidiana.</h3><p>Muoversi con fiducia.<br>Nei gesti di ogni giorno.</p></div><button class="card-open" data-service="mobility" aria-label="Scopri mobilità quotidiana"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+        <article class="service-card"><div class="service-photo photo-assessment photo-strength" role="img" aria-label="Esercizio di forza, immagine di concept"></div><span class="poster-number" aria-hidden="true">06</span><div class="card-copy"><h3>Forza<br>e controllo.</h3><p>Costruire le tue capacità.<br>Un passo alla volta.</p></div><button class="card-open" data-service="strength" aria-label="Scopri forza e controllo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></article>
+      </div>
+      <div class="gallery-bottom"><span>Trascina. Esplora. Parti da te.</span><div class="gallery-progress" aria-hidden="true"><span></span></div><span class="gallery-count" aria-hidden="true">01 — 06</span></div>
+    </section>
+    <section class="first-visit-story section" id="approccio" aria-labelledby="approach-title">
+      <div class="story-heading"><h2 id="approach-title">Il tuo primo obiettivo.<br>Il nostro punto<br>di partenza<span class="accent">.</span></h2><p>La prima visita, passo dopo passo. Le tue attività e le tue scelte guidano il percorso insieme alla valutazione.</p></div>
+      <div class="visit-experience" id="prima-visita">
+        <div class="visit-tabs" role="tablist" aria-label="Le tappe della prima visita">
+          <button role="tab" id="visit-tab-0" aria-controls="visit-panel-0" aria-selected="true" tabindex="0"><span>01</span>Ascoltiamo</button>
+          <button role="tab" id="visit-tab-1" aria-controls="visit-panel-1" aria-selected="false" tabindex="-1"><span>02</span>Valutiamo</button>
+          <button role="tab" id="visit-tab-2" aria-controls="visit-panel-2" aria-selected="false" tabindex="-1"><span>03</span>Scegliamo</button>
+          <button role="tab" id="visit-tab-3" aria-controls="visit-panel-3" aria-selected="false" tabindex="-1"><span>04</span>Iniziamo</button>
+        </div>
+        <div class="visit-panels">
+          <article class="visit-panel" id="visit-panel-0" role="tabpanel" aria-labelledby="visit-tab-0" tabindex="0"><span class="visit-number" aria-hidden="true">01</span><div><h3>Cosa ti manca<br>di più?</h3><p>Partiamo da come stai e da ciò che il dolore ha cambiato nella tua giornata. Una corsa, le scale, un gesto che vuoi ritrovare.</p><p class="visit-question">Il punto di partenza è la tua esperienza.</p></div></article>
+          <article class="visit-panel" id="visit-panel-1" role="tabpanel" aria-labelledby="visit-tab-1" tabindex="0" hidden><span class="visit-number" aria-hidden="true">02</span><div><h3>Capire come<br>ti muovi.</h3><p>Osserviamo insieme movimenti e capacità, con una valutazione adatta alla tua situazione. Ogni prova ha uno scopo che condividiamo.</p><p class="visit-question">La valutazione dà contesto alle tue sensazioni.</p></div></article>
+          <article class="visit-panel" id="visit-panel-2" role="tabpanel" aria-labelledby="visit-tab-2" tabindex="0" hidden><span class="visit-number" aria-hidden="true">03</span><div><h3>Un obiettivo.<br>Scelto insieme.</h3><p>Mettiamo in relazione ciò che vuoi recuperare con la valutazione. Discutiamo le possibilità e decidiamo i primi passi, tenendo conto della tua vita.</p><p class="visit-question">Hai un ruolo attivo nelle decisioni.</p></div></article>
+          <article class="visit-panel" id="visit-panel-3" role="tabpanel" aria-labelledby="visit-tab-3" tabindex="0" hidden><span class="visit-number" aria-hidden="true">04</span><div><h3>Portare il percorso<br>nella tua giornata.</h3><p>Concordiamo le prime attività e come seguirne l’evoluzione. Il percorso si adatta alla tua risposta, con strumenti per costruire autonomia.</p><a class="contact-button" href="parliamone.html">Parliamone</a></div></article>
+        </div>
+        <div class="visit-navigation"><button id="visit-prev" aria-label="Tappa precedente" disabled>←</button><p id="visit-status" role="status" aria-live="polite">1 di 4 · Ascoltiamo</p><button id="visit-next" aria-label="Tappa successiva">→</button></div>
+      </div>
+    </section>
+    <section class="section intro-section" id="filippo"><h2>Il movimento,<br>anche nella mia vita.</h2><p class="profile">Sci, tennis, corsa e bici fanno parte della mia esperienza personale. Nel lavoro parto dall’ascolto di ciò che conta per te, per condividere un percorso orientato al recupero delle tue attività.</p></section>
+  </main>
+  <footer class="site-footer"><span>filippo. / Fisioterapista</span><span>Prototipo · Immagini generate · Servizi segnaposto</span><a href="strade-creative.html">Espedienti creativi: le proposte</a></footer>
+  <dialog id="service-dialog" aria-labelledby="service-title"><button class="dialog-close" aria-label="Chiudi dettaglio servizio">×</button><h2 id="service-title"></h2><p id="service-description"></p><a class="contact-button" id="service-contact" href="parliamone.html">Parliamone</a></dialog>
+</body>
+</html>

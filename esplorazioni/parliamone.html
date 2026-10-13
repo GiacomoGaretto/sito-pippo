@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f2"><title>Parliamone — Filippo</title><link rel="stylesheet" href="glass.css"><link rel="stylesheet" href="body-map.css"><script src="glass.js" defer></script><script src="body-map.js" defer></script></head>
+<body class="contact-page">
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="float-nav" aria-label="Navigazione del sito">
+    <div class="bar glass">
+      <a class="logo" href="glass.html" aria-label="Filippo fisioterapista, torna all’inizio">filippo<span>.</span></a>
+      <nav class="links" id="menu" aria-label="Navigazione principale">
+        <a href="glass.html#servizi">Servizi</a><a href="glass.html#approccio">Approccio</a><a href="glass.html#prima-visita">Prima visita</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Apri il menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+    <a class="cta glass" href="parliamone.html" aria-current="page">Parliamone</a>
+  </header>
+  <main id="contenuto">
+    <section class="body-contact" id="contatto" aria-labelledby="contact-title">
+      <div class="contact-heading"><h1 id="contact-title">Parliamone<span class="accent">.</span></h1><p>Per informazioni o un preventivo, raccontami cosa ti porta qui.</p></div>
+      <div class="body-workspace">
+        <div class="body-canvas">
+          <div class="body-view-switch" role="group" aria-label="Vista del corpo"><button type="button" data-view="front" aria-pressed="true">Fronte</button><button type="button" data-view="back" aria-pressed="false">Retro</button></div>
+          <div class="body-view" id="body-front"></div>
+          <div class="body-view" id="body-back" hidden></div>
+          <div class="body-map-caption"><span class="map-key" aria-hidden="true"></span><span id="body-hint">Seleziona una zona sulla figura</span></div>
+        </div>
+        <div class="body-options">
+          <h2 class="regions-title">Quali zone ti interessano?</h2>
+          <p class="body-options-intro">Selezione facoltativa, anche dalla figura.</p>
+          <div class="region-options" id="region-options" role="group" aria-label="Zone del corpo"></div>
+          <div class="selection-line"><p id="selection-status" role="status" aria-live="polite" aria-atomic="true">Nessuna zona selezionata</p><button type="button" id="clear-regions" disabled>Azzera</button></div>
+          <div class="activity-field"><label for="activity">Come posso aiutarti?</label><textarea id="activity" name="activity" rows="3" maxlength="600" placeholder="Il motivo del contatto e cosa vorresti tornare a fare." aria-describedby="activity-help"></textarea><p id="activity-help">Facoltativo · massimo 600 caratteri.</p></div>
+          <button class="contact-button" id="request" type="button">Rivedi la richiesta</button>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="site-footer"><a href="glass.html">Torna alla home</a><span>Prototipo · Nessuna richiesta viene inviata</span></footer>
+  <dialog id="request-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Chiudi riepilogo">×</button><h2 id="dialog-title">La tua richiesta.</h2><div class="request-summary"><h3>Le zone indicate</h3><ul id="request-regions"></ul><p id="request-no-regions" hidden>Preferisco parlarne direttamente con Filippo.</p><h3>Il motivo del contatto</h3><p id="request-activity"></p></div><p class="prototype-note">Anteprima del contatto: questa richiesta non viene inviata.</p><button id="close-dialog">Torna a modificare</button></dialog>
+</body></html>

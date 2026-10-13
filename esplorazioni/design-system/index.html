@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Filippo — Design system 0.2</title>
+  <link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="guide.css">
+  <script src="guide.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Salta al contenuto</a>
+<header class="mast"><a class="wordmark" href="../glass.html">filippo<span>.</span></a><span>Design system / bozza 0.2</span><a href="../glass.html">Apri il sito ↗</a></header>
+<div class="layout">
+<aside><nav aria-label="Indice del design system">
+  <a href="#direzione">Direzione</a><a href="#colore">Colore</a><a href="#tipografia">Tipografia</a><a href="#ritmo">Spazi e forme</a><a href="#componenti">Componenti</a><a href="#movimento">Navbar e movimento</a><a href="#immagini">Gallery e immagini</a><a href="#prima-visita">Prima visita</a><a href="#contatto">Contatto interattivo</a><a href="#voce">Voce e contenuti</a><a href="#prossimi">Da definire</a>
+</nav><a class="download" href="tokens.json" download>Scarica i token JSON ↓</a></aside>
+<main id="main">
+<section id="direzione" class="opening">
+  <h1>Energia.<br>Spazio.<br>Movimento<span>.</span></h1>
+  <div class="intro"><p>Una base visiva per aiutare le persone a tornare a ciò che conta per loro. Diretta, sportiva, aperta anche alla vita di tutti i giorni.</p><p class="note">Prima bozza da usare e affinare sul progetto. Le fondamenta riprendono la direzione approvata; le scale e gli stati sono una proposta di consolidamento.</p></div>
+  <div class="principles"><article><h3>Una voce forte</h3><p>Sans serif bold, titoli essenziali, corpo testo ampio. Nessun occhiello prima dei titoli.</p></article><article><h3>Un accento deciso</h3><p>Arancione sulle azioni e sui punti di attenzione. Superfici prevalentemente neutre.</p></article><article><h3>Ordine in movimento</h3><p>Gallery allineata e gesti chiari. L’animazione accompagna una funzione.</p></article></div>
+</section>
+<section id="colore">
+  <h2>Il colore fa una cosa precisa.</h2><p class="lead">Fa emergere l’azione. Il rapporto 60–30–10 è una guida alla composizione: chiaro, scuro, accento. Non una quota rigida per ogni sezione.</p>
+  <div class="palette"><div class="swatch paper"><strong>Paper</strong><code>#F5F5F2</code><span>Superficie principale</span></div><div class="swatch ink"><strong>Ink</strong><code>#191919</code><span>Testo e sezioni scure</span></div><div class="swatch orange"><strong>Energy</strong><code>#FF5A1F</code><span>Azione e selezione</span></div></div>
+  <div class="minor-colors"><span><i style="background:#e7e7e3"></i>Surface / #E7E7E3</span><span><i style="background:#d1d1cc"></i>Line / #D1D1CC</span><span><i style="background:#61615d"></i>Muted / #61615D</span></div>
+  <div class="split"><div><h3>Abbinamenti per il testo</h3><ul class="plain-list"><li>Ink su Paper <b data-contrast="191919,f5f5f2"></b></li><li>Ink su Energy <b data-contrast="191919,ff5a1f"></b></li><li>Muted su Paper <b data-contrast="61615d,f5f5f2"></b></li></ul><p class="note">Rapporti calcolati su tinte piatte. Per il testo normale puntiamo ad almeno 4,5:1.</p></div><div class="callout"><h3>Arancione con testo scuro</h3><p>Il bianco sull’arancione non raggiunge 4,5:1. Anche l’arancione su fondo chiaro va riservato agli accenti grafici, non al corpo testo.</p><p class="note">Sulle fotografie e sul vetro il contrasto dipende dall’immagine sottostante: va verificato nella composizione finale.</p></div></div>
+</section>
+<section id="tipografia">
+  <h2>Una famiglia. Due pesi.</h2><p class="lead">Nimbus Sans, regular e bold. Nel prototipo si chiama “Forma”: è un alias CSS. La famiglia definitiva resta una scelta aperta.</p>
+  <div class="type-specimen"><div class="type-display">Torna a<br>muoverti<span>.</span></div><div class="type-info"><b>Aa / 400 · 700</b><p>Corpo 20 px su desktop, 18 px su mobile. Interlinea 1,6. Titoli compatti, mai compressi al punto da perdere leggibilità.</p></div></div>
+  <div class="table-scroll"><table><caption>Scala iniziale proposta</caption><thead><tr><th>Ruolo</th><th>Desktop → mobile</th><th>Peso / interlinea</th></tr></thead><tbody><tr><td>Display / hero</td><td>fino a 112 → 48 px</td><td>700 / 1,02</td></tr><tr><td>Titolo di sezione</td><td>fino a 64 → 38 px</td><td>700 / 1,02</td></tr><tr><td>Titolo di blocco</td><td>25 → 25 px</td><td>700 / 1,2</td></tr><tr><td>Corpo principale</td><td>20 → 18 px</td><td>400 / 1,6</td></tr><tr><td>Pulsanti e controlli</td><td>16 → 16 px</td><td>700 / 1,3</td></tr><tr><td>Note di supporto</td><td>14 → 14 px</td><td>400 / 1,5</td></tr></tbody></table></div>
+  <p class="note">Questa scala è da consolidare: il prototipo ha ancora eccezioni espressive, fra cui i titoli della gallery fino a 86 px. Le note piccole non introducono mai i titoli.</p>
+</section>
+<section id="ritmo">
+  <h2>Lo spazio tiene insieme tutto.</h2><p class="lead">Una scala basata su 4 px, con intervalli più ampi per separare idee e sezioni. I poster restano geometrici, i controlli diventano morbidi.</p>
+  <div class="spacing" aria-label="Scala spaziature in pixel"><div style="--size:4px">4<i></i></div><div style="--size:8px">8<i></i></div><div style="--size:12px">12<i></i></div><div style="--size:16px">16<i></i></div><div style="--size:24px">24<i></i></div><div style="--size:32px">32<i></i></div><div style="--size:48px">48<i></i></div><div style="--size:64px">64<i></i></div><div style="--size:96px">96<i></i></div></div>
+  <div class="radii"><div style="border-radius:5px">Poster<b>5 px</b></div><div style="border-radius:12px">Selezione<b>12 px</b></div><div style="border-radius:15px">Campo<b>15 px</b></div><div style="border-radius:24px">Pannello<b>24 px</b></div><div style="border-radius:999px">Pillola<b>999 px</b></div></div>
+  <div class="split"><div><h3>Griglia proposta</h3><p>Contenitore fino a 1440 px. 12 colonne desktop, 4 mobile; i moduli usano allineamenti comuni. Gap di 24 px, 16 px su mobile.</p></div><div><h3>Adattamento</h3><p>Compatto fino a 700 px, intermedio fino a 1000 px. Le colonne si impilano; la gallery mantiene lo scorrimento orizzontale.</p></div></div>
+  <p class="note">Scala e griglia sono regole nuove da applicare progressivamente. Non tutte le distanze attuali sono già normalizzate. Angoli morbidi a 25 px restano una variante della navbar, non un secondo stile da mescolare.</p>
+</section>
+<section id="componenti">
+  <h2>Piccoli gesti, regole chiare.</h2><p class="lead">Prova hover, focus da tastiera e selezione. Una sola azione primaria per gruppo; il testo del pulsante descrive cosa succederà.</p>
+  <div class="component-board"><div class="button-row"><button class="button primary" id="sample-action">Parliamone</button><button class="button secondary" id="sample-reset">Azzera selezione</button><button class="button" disabled>Non disponibile</button></div><p id="action-feedback" class="note" role="status">Esempi interattivi: nessuna richiesta viene inviata.</p><div class="state-row"><span class="button primary hover-sample">Hover</span><span class="button primary focus-sample">Focus</span><span class="note">Stati illustrati / i controlli sopra sono attivi</span></div></div>
+  <div class="split"><div><h3>Selezione multipla</h3><div class="choices" aria-label="Esempio di macroaree"><button class="region" aria-pressed="false">Spalle<span aria-hidden="true">+</span></button><button class="region" aria-pressed="true">Ginocchia<span aria-hidden="true">✓</span></button><button class="region" aria-pressed="false">Schiena<span aria-hidden="true">+</span></button></div><p class="note">La selezione usa testo, segno di spunta e stato accessibile, oltre al colore. Area di interazione proposta: almeno 44 × 44 px.</p></div><div><h3>Una domanda utile</h3><label for="activity-demo">Come posso aiutarti? <span class="note">(facoltativo)</span></label><textarea id="activity-demo" rows="3" maxlength="600" placeholder="Il motivo del contatto e cosa vorresti tornare a fare."></textarea><p class="note">La domanda parte dalla vita quotidiana della persona. Etichetta sempre visibile, anche durante la compilazione.</p></div></div>
+  <details class="faq"><summary>Come si presenta un contenuto espandibile?</summary><p>Un titolo comprensibile, un controllo da tastiera e una risposta breve. Il focus resta visibile; l’informazione essenziale non dipende dall’hover.</p></details>
+  <p class="note">Focus proposto a doppio anello chiaro/scuro. Errori e conferme di invio saranno definiti insieme al flusso di contatto reale; non ci sono ancora stati clinici o colori semantici approvati.</p>
+</section>
+<section id="movimento">
+  <h2>Una bolla che si raccoglie.</h2><p class="lead">Logo e CTA rimangono insieme, al centro, in due pillole della stessa larghezza e altezza. Le voci scompaiono mentre la barra si restringe. Sul sito lo scroll verso l’alto la riapre.</p>
+  <div class="nav-stage"><div class="demo-nav" id="demo-nav"><div class="demo-bar"><span class="wordmark">filippo<span>.</span></span><div class="demo-links" id="demo-links"><a href="#immagini">Servizi</a><a href="#voce">Approccio</a><a href="#prima-visita">Prima visita</a></div></div><a class="demo-cta" href="../parliamone.html">Parliamone</a></div><p>Vetro satinato / accento sull’azione</p></div>
+  <div class="demo-controls"><button class="button secondary" id="toggle-nav" aria-controls="demo-nav" aria-expanded="true">Simula scroll verso il basso</button><span id="motion-status" class="note" role="status">Navbar espansa</span></div>
+  <div class="split"><div><h3>Il ritmo</h3><p>Uscita delle voci, poi collasso dopo 150 ms. Restringimento: 640 ms, curva <code>cubic-bezier(.22,.8,.25,1)</code>. Uscita voci: 120 ms. Ingresso: 180 ms con attesa di 640 ms. Feedback dei controlli: 180 ms.</p></div><div><h3>Il materiale</h3><p>Vetro chiaro al 61%, blur di 22 px, bordo bianco traslucido. Se il blur non è supportato, fondo pieno chiaro. Con movimento ridotto, cambio di stato immediato.</p></div></div>
+  <p class="note">Questo campione mostra la transizione tramite pulsante; su schermi piccoli parte già compatto. Per provare scroll, menu mobile e gestione del focus usa il <a href="../glass.html">prototipo completo</a>.</p>
+</section>
+<section id="immagini">
+  <h2>Fotografie che fanno spazio al gesto.</h2><p class="lead">Corpi in movimento, dettagli funzionali, momenti di vita reale. Bianco e nero per lasciare all’arancione un ruolo preciso.</p>
+  <div class="poster-board"><article class="poster"><span class="poster-num" aria-hidden="true">01</span><div><h3>Riabilitazione<br>sportiva</h3><p>Ritrovare il proprio ritmo.</p></div><a class="poster-plus" href="../glass.html#servizi" aria-label="Apri la gallery dei servizi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a></article><div class="poster-rules"><h3>Una serie ordinata</h3><p>Sei card segnaposto, stessa linea di partenza, stessa altezza. Numero grande, titolo bold, testo essenziale e un solo controllo arancione.</p><p>Swipe, trascinamento, pulsanti e tastiera accompagnano la stessa esplorazione. Nessuna rotazione o sfalsamento.</p><p class="note">Fotografia di concept generata e servizio segnaposto. Catalogo e immagini reali devono ancora essere confermati.</p></div></div>
+</section>
+<section id="prima-visita"><h2>La prima visita, in quattro tappe.</h2><p class="lead">Ascoltiamo, valutiamo, scegliamo insieme, iniziamo. Un racconto navigabile con pulsanti e tastiera, senza avanzamento automatico.</p><a class="button secondary" href="../glass.html#prima-visita">Esplora la prima visita</a></section>
+<section id="contatto">
+  <h2>Partire dalla persona.</h2><p class="lead">Il corpo interattivo aiuta a descrivere una necessità. Il modulo vive nella pagina Parliamone, dedicata a informazioni e preventivi.</p>
+  <a class="body-preview" href="../parliamone.html"><img src="../corpo-interattivo.png" loading="lazy" alt="Prototipo della selezione delle macroaree del corpo, con viste fronte e retro e pulsanti testuali."></a>
+  <div class="split"><div><h3>Comportamento da mantenere</h3><p>Più macroaree selezionabili, fronte e retro sincronizzati, alternativa testuale, possibilità di cancellare e proseguire senza selezioni. Riepilogo modificabile prima di qualsiasi invio.</p></div><div><h3>Disegno ancora grezzo</h3><p>Illustrazione, proporzioni, etichette e dimensioni delle aree restano da affinare. Non offre diagnosi e non promette un trattamento in base al punto selezionato.</p></div></div>
+  <a class="button secondary" href="../parliamone.html">Prova il corpo interattivo</a><p class="note">Nel prototipo i dati restano in memoria, non vengono inviati né salvati. Il canale di contatto reale e i relativi stati sono da progettare.</p>
+</section>
+<section id="voce">
+  <h2>Chiaro, attivo, condiviso.</h2><p class="lead">La persona partecipa alle decisioni del percorso. Il racconto collega il movimento alle attività che vuole ritrovare, senza attribuire colpe o promettere risultati.</p>
+  <div class="split"><div class="copy-card"><h3>“Decidiamo insieme da dove ripartire.”</h3><p>Ascolto, obiettivi concreti e scelte condivise. Verbi diretti: capire, scegliere, ritrovare, muoversi.</p></div><div class="copy-card"><h3>“Cosa vorresti tornare a fare?”</h3><p>Non solo intensità del dolore: anche le conseguenze nella vita quotidiana. Niente affermazioni assolute sul dolore o tempi di recupero garantiti.</p></div></div>
+  <p class="note">Titoli subito visibili, senza piccole frasi introduttive. Niente linguaggio da prestazione obbligatoria: motivazione e partecipazione si costruiscono insieme.</p>
+</section>
+<section id="prossimi">
+  <h2>La base c’è.<br>Ora si affina.</h2><div class="status-list"><div><b>Direzione approvata</b><p>Navbar e collasso, arancione energico, sans bold, corpo ampio, assenza di occhielli, gallery ordinata.</p></div><div><b>Proposta di sistema</b><p>Scala degli spazi e dei testi, griglia, nomi dei token, focus e target dei controlli. Da verificare sui moduli reali.</p></div><div><b>Ancora da scegliere</b><p>Font definitivo e marchio; disegno del corpo; foto e servizi reali; flusso di invio; espediente creativo ricorrente.</p></div></div>
+  <div class="button-row"><a class="button primary" href="README.md">Leggi le specifiche</a><a class="button secondary" href="tokens.css" download>Token CSS ↓</a><a class="button secondary" href="../strade-creative.html">Rivedi le strade creative</a></div>
+</section>
+<footer>Filippo / Design system 0.2 · Bozza di lavoro<br>Font locali Nimbus Sans · <a href="../assets/FONT-LICENSE.txt">Licenza</a> · <a href="../glass.html">Prototipo del sito</a></footer>
+</main></div>
+</body></html>
